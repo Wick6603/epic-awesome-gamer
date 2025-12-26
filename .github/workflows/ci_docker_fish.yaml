@@ -22,7 +22,7 @@ jobs:
             uses: elgohr/Publish-Docker-Github-Action@v5
             with:
               name: junlinwu/epic-awesome-gamer # dockerid/imageName
-              platforms: linux/arm64
+              platforms: linux/arm64,linux/amd64
               dockerfile: ./docker/Dockerfile
               tags: latest
               username: ${{ secrets.DOCKERHUB_USERNAME }} # docker hub userid 在setting创建secrets name=DOCKER_USERNAME  value=dockerid
