@@ -103,6 +103,10 @@ jobs:
           EPIC_EMAIL: ${{ secrets.EPIC_EMAIL }}
           EPIC_PASSWORD: ${{ secrets.EPIC_PASSWORD }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CHALLENGE_CLASSIFIER_MODEL: gemini-2.5-flash
+          IMAGE_CLASSIFIER_MODEL: gemini-2.5-flash
+          SPATIAL_POINT_REASONER_MODEL: gemini-2.5-flash
+          SPATIAL_PATH_REASONER_MODEL: gemini-2.5-flash
           ENABLE_APSCHEDULER: false
         run: |
           echo "Starting Epic Awesome Gamer..."
