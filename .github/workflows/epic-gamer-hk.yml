@@ -1,4 +1,4 @@
-name: Epic Awesome Gamer
+name: Epic Awesome Gamer HK
 
 on:
   # Manual trigger
@@ -100,13 +100,13 @@ jobs:
       - name: Run Epic Awesome Gamer
         working-directory: ./epic-gamer-src
         env:
-          EPIC_EMAIL: ${{ secrets.EPIC_EMAIL }}
-          EPIC_PASSWORD: ${{ secrets.EPIC_PASSWORD }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CHALLENGE_CLASSIFIER_MODEL: gemini-2.5-flash
-          IMAGE_CLASSIFIER_MODEL: gemini-2.5-flash
-          SPATIAL_POINT_REASONER_MODEL: gemini-2.5-flash
-          SPATIAL_PATH_REASONER_MODEL: gemini-2.5-flash
+          EPIC_EMAIL: ${{ secrets.EPIC_EMAIL_HK }}
+          EPIC_PASSWORD: ${{ secrets.EPIC_PASSWORD_HK }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_HK }}
+          CHALLENGE_CLASSIFIER_MODEL: gemini-3-flash
+          IMAGE_CLASSIFIER_MODEL: gemini-3-flash
+          SPATIAL_POINT_REASONER_MODEL: gemini-3-flash
+          SPATIAL_PATH_REASONER_MODEL: gemini-3-flash
           ENABLE_APSCHEDULER: false
         run: |
           echo "Starting Epic Awesome Gamer..."
